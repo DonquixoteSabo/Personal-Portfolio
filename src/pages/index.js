@@ -1,11 +1,12 @@
 import React from 'react';
+
 import Layout from '../components/Layout/Layout';
+import Navigation from '../components/Navigation/Navigation';
 
 const IndexPage = () => {
   return (
     <Layout>
-      <title>Kamil Budzik</title>
-      <h1>DEV IM</h1>
+      <Navigation />
     </Layout>
   );
 };
