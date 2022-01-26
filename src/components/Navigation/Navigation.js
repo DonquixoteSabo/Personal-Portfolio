@@ -14,6 +14,7 @@ const Navigation = () => {
       </button>
     </nav>
   );
+
 };
 
 export default Navigation;
