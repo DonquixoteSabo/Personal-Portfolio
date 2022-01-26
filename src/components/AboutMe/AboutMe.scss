@@ -1,0 +1,57 @@
+@import '../../styles/variables';
+
+
+.about {
+  max-width: 1280px;
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.about__title {
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 0.08em;
+  color: $primary;
+  margin-bottom: 50px;
+
+}
+
+.about__txt {
+  color: $dark;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 23px;
+  max-width: 500px;
+}
+
+.about__spaceX {
+  width: 80%;
+  max-width: 350px;
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+}
+
+.about__rocket {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 120px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about {
+    font-size: 1.2rem;
+    margin-top: 200px;
+  }
+}
