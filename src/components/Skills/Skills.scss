@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+
+.skills {
+  max-width: 1280px;
+  width: 80%;
+  margin: 80px auto;
+  font-size: 1rem;
+}
+
+.skills__title {
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 0.08em;
+  color: $primary;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.skills {
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    justify-content: space-around;
+  }
+
+  &__item {
+    margin: 1em 3em 1em 0;
+    text-align: center;
+  }
+
+  &__img {
+    height: 88px;
+    margin: 0.5em 0;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .skills__title {
+    text-align: left;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .skills {
+    font-size: 1.2rem;
+    margin-top: 200px;
+  }
+}
