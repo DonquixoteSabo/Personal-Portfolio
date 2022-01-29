@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './Skills.scss';
 
 import html from '../../images/skills/html.svg';
-import css from '../../images/skills/css.svg';
+import css from '../../images/skills/css.png';
 import javascript from '../../images/skills/javascript-seeklogo.svg';
 import typescript from '../../images/skills/typescriptlang-icon.svg';
 import testing from '../../images/skills/react-testing.png';
@@ -17,39 +17,62 @@ import graphql from '../../images/skills/graphql.svg';
 const skillsData = [
   {
     icon: html,
-    name: 'HTML5'
+    name: 'HTML5',
+    smallDevice: true
   },
-  // {
-  //   icon: css,
-  //   name: 'CSS3'
-  // },
+  {
+    icon: css,
+    name: 'CSS3',
+    smallDevice: true
+  },
   {
     icon: javascript,
-    name: 'Javascript'
+    name: 'Javascript',
+    smallDevice: false
   },
   {
     icon: react,
-    name: 'React'
+    name: 'React',
+    smallDevice: true
   },
   {
     icon: typescript,
-    name: 'Typescript'
+    name: 'Typescript',
+    smallDevice: true
   },
   {
     icon: testing,
-    name: 'Testing'
+    name: 'Testing',
+    smallDevice: false
   },
   {
     icon: graphql,
-    name: 'Api'
+    name: 'Api',
+    smallDevice: false
   },
   {
     icon: england,
-    name: <>English <br />B2+/C1</>
+    name: <>English <br />B2+/C1</>,
+    smallDevice: true
   }
 ];
 
 const Skills = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [skills, setSkills] = useState([]);
+  const breakpoint = 700;
+
+  useEffect(() => {
+    window.addEventListener('resize', () => setWidth(window.innerWidth));
+  }, []);
+  useEffect(() => {
+    if (width > breakpoint) {
+      setSkills(skillsData);
+    } else {
+      setSkills(skillsData.filter(({ smallDevice }) => smallDevice));
+    }
+  }, [width]);
+
   return (
     <section className='skills'>
       <header className='skills__title'>
@@ -57,8 +80,8 @@ const Skills = () => {
       </header>
       {/*<h2 className='skills__subtitle'>Using now:</h2>*/}
       <ul className='skills__list'>
-        {skillsData.map(({ icon, name }) => (
-          <li className='skills__item'>
+        {skills.map(({ icon, name, smallDevice }) => (
+          <li key={name} className='skills__item'>
             <img className='skills__img' src={icon} alt={name} />
             <p>{name}</p>
           </li>

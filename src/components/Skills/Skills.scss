@@ -21,25 +21,22 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1280px;
     justify-content: space-around;
+    max-width: 1280px;
   }
 
   &__item {
     margin: 1em 3em 1em 0;
     text-align: center;
+    @media screen and (min-width: 800px) {
+      width: 20%;
+      margin-top: 3em;
+    }
   }
 
   &__img {
     height: 88px;
     margin: 0.5em 0;
-  }
-}
-
-
-@media screen and (min-width: 700px) {
-  .skills__title {
-    text-align: left;
   }
 }
 
