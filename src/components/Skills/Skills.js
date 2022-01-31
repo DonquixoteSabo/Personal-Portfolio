@@ -83,7 +83,7 @@ const Skills = () => {
         {skills.map(({ icon, name, smallDevice }) => (
           <li key={name} className='skills__item'>
             <img className='skills__img' src={icon} alt={name} />
-            <p>{name}</p>
+            {/*<p>{name}</p>*/}
           </li>
         ))}
       </ul>
