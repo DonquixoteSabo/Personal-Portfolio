@@ -40,20 +40,19 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   .skills__title {
     text-align: left;
   }
+  .skills__item {
+    text-align: left;
+  }
 }
+
 
 @media screen and (min-width: 900px) {
   .skills {
     font-size: 1.2rem;
     margin-top: 200px;
   }
-
-  .skills__item {
-    text-align: left;
-  }
-
 }
