@@ -3,6 +3,7 @@ import React from 'react';
 import SvgRocket from './SvgRocket';
 
 import './AboutMe.scss';
+import Icon from './Icon';
 
 
 //TODO Add link into footer
@@ -26,9 +27,11 @@ const AboutMe = () => {
       </div>
       <div className='about__spaceX'>
         <SvgRocket className='about__rocket' />
+        {/*<Icon className='about__rocket' />*/}
       </div>
     </section>
   );
 };
-
+// TODO change rocket into new icon and animate it.
+// Note not this one because of the bad licence policy. Look for new icon
 export default AboutMe;

@@ -6,6 +6,7 @@ import Hero from '../components/Hero/Hero';
 import AboutMe from '../components/AboutMe/AboutMe';
 import Skills from '../components/Skills/Skills';
 import Projects from '../components/Projects/Projects';
+import Footer from '../components/Footer/Footer';
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <AboutMe />
       <Skills />
       <Projects />
+      <Footer />
     </Layout>
   );
 };

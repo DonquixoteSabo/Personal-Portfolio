@@ -33,7 +33,7 @@
 
 .project {
   display: flex;
-  background-color: #6246EA;
+  background-color: $primary;
   flex-direction: column-reverse;
   max-width: 350px;
   border-radius: 8px;
@@ -63,9 +63,10 @@
     color: white;
     padding: 0.5em 0;
     font-weight: 600;
+    transition: .3s;
 
     &:hover {
-      color: darken(white, 20%);
+      opacity: 50%;
     }
 
     &-icon {

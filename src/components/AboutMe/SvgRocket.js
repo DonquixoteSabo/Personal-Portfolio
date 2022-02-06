@@ -1,18 +1,33 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import gsap from 'gsap';
 
 function SvgRocket(props) {
-  const tl = React.useRef(null);
-
-  useEffect(() => {
-    // gsap.to('#Building', { x: '-50px', duration: 1 });
-    // const rocketLaunch = rocket.current.getElementById('Rocket_launch');
-    // tl.current = gsap.timeline();
-    //
-    //   tl.current.to(rocketLaunch, { x: '-50px', duration: 1 })
-    //
-    //
-  }, []);
+  // const tl = React.useRef(null);
+  //
+  // useEffect(() => {
+  //   // ITEMS
+  //   const grayClouds = document.getElementById('Gray-clouds');
+  //   const building = document.getElementById('Building');
+  //   const fire = document.getElementById('Fire');
+  //   const foundation = document.getElementById('Foundation');
+  //   const smallClouds = document.getElementById('Small-clouds');
+  //   const rocket = document.getElementById('Rocket');
+  //   const cloud = document.getElementById('Cloud');
+  //
+  //   tl.current = gsap.timeline();
+  //
+  //   tl.current.set([cloud, grayClouds, building, fire, foundation, smallClouds, rocket], { autoAlpha: 0 });
+  //
+  //
+  //   tl.current
+  //     .set([foundation, building], { autoAlpha: 1 })
+  //     .set(grayClouds, { x: '-40px' })
+  //     .set([rocket, fire], { y: '+200px' })
+  //     .to(grayClouds, { x: 0, autoAlpha: 1, duration: 1 })
+  //     .to(rocket, { autoAlpha: 1 })
+  //     .to(fire, { autoAlpha: 1, duration: 1, zIndex: 2 });
+  //
+  // }, []);
 
   return (
     <svg
