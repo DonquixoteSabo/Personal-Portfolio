@@ -1,89 +1,63 @@
 import React, { useEffect, useState } from 'react';
-
+import gsap from 'gsap';
+//content
+import { skillsData } from './data';
+//css
 import './Skills.scss';
-
-import html from '../../images/skills/html.svg';
-import css from '../../images/skills/css.png';
-import javascript from '../../images/skills/javascript-seeklogo.svg';
-import typescript from '../../images/skills/typescriptlang-icon.svg';
-import testing from '../../images/skills/react-testing.png';
-import react from '../../images/skills/react.svg';
-import england from '../../images/skills/england.svg';
-import graphql from '../../images/skills/graphql.svg';
-
-//TODO add CSS section
-//TODO add animation from figma
-
-const skillsData = [
-  {
-    icon: html,
-    name: 'HTML5',
-    smallDevice: true
-  },
-  {
-    icon: css,
-    name: 'CSS3',
-    smallDevice: true
-  },
-  {
-    icon: javascript,
-    name: 'Javascript',
-    smallDevice: false
-  },
-  {
-    icon: react,
-    name: 'React',
-    smallDevice: true
-  },
-  {
-    icon: typescript,
-    name: 'Typescript',
-    smallDevice: true
-  },
-  {
-    icon: testing,
-    name: 'Testing',
-    smallDevice: false
-  },
-  {
-    icon: graphql,
-    name: 'Api',
-    smallDevice: false
-  },
-  {
-    icon: england,
-    name: <>English <br />B2+/C1</>,
-    smallDevice: true
-  }
-];
 
 const Skills = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const [skills, setSkills] = useState([]);
-  const breakpoint = 700;
+  // const tl = useRef(null);
+
+  const BREAKPOINT = 700;
 
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth));
   }, []);
   useEffect(() => {
-    if (width > breakpoint) {
+    if (width > BREAKPOINT) {
       setSkills(skillsData);
     } else {
       setSkills(skillsData.filter(({ smallDevice }) => smallDevice));
     }
   }, [width]);
 
+
+  const playAnimation = (index) => {
+    const el = document.getElementById(index);
+    // tl.current = gsap.timeline();
+    //
+    // tl.current
+    //   .to(el, { x: '-10px', duration: '1s' });
+    gsap.to(el, { x: '-10px', duration: '1s' });
+  };
+
+  const reverseAnimation = (index) => {
+    const el = document.getElementById(index);
+    // tl.current = gsap.timeline();
+    //
+    // tl.current
+    //   .to(el, { x: '0', duration: '1s' });
+    gsap.to(el, { x: 0, duration: '1s' });
+
+  };
+
   return (
     <section className='skills'>
       <header className='skills__title'>
         <h1>Skills</h1>
       </header>
-      {/*<h2 className='skills__subtitle'>Using now:</h2>*/}
       <ul className='skills__list'>
-        {skills.map(({ icon, name, smallDevice }) => (
-          <li key={name} className='skills__item'>
+        {skills.map(({ icon, name, smallDevice, text }, index) => (
+          <li id={index} key={name} className='skills__item' onMouseEnter={() => playAnimation(index)}
+              onMouseLeave={() => reverseAnimation(index)}>
             <img className='skills__img' src={icon} alt={name} />
-            {/*<p>{name}</p>*/}
+            <ul className={`skills__inner-list`}>
+              {text.map((text) => (
+                <li key={text}>{text}</li>
+              ))}
+            </ul>
           </li>
         ))}
       </ul>
