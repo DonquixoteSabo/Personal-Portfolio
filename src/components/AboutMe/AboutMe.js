@@ -1,14 +1,13 @@
 import React from 'react';
-
-import SvgRocket from './SvgRocket';
-
-import './AboutMe.scss';
+// icons
 import Icon from './Icon';
+//styles
+import './AboutMe.scss';
 
 
 //TODO Add link into footer
-//<a href="https://www.streamlinehq.com">Free Rocket Launch SVG illustration by Streamline</a>
-//TODO animate rocket with gsap
+//<a href="https://www.streamlinehq.com">CHECK WHERE IT IS</a>
+//TODO animate icon
 
 const AboutMe = () => {
   return (
@@ -25,13 +24,11 @@ const AboutMe = () => {
           where technology evolves every day, I feel that being a frontend developer is the perfect choice for me.
         </p>
       </div>
-      <div className='about__spaceX'>
-        <SvgRocket className='about__rocket' />
-        {/*<Icon className='about__rocket' />*/}
+      <div className='about__icon-wrapper'>
+        <Icon className='about__icon' />
       </div>
     </section>
   );
 };
-// TODO change rocket into new icon and animate it.
-// Note not this one because of the bad licence policy. Look for new icon
+
 export default AboutMe;

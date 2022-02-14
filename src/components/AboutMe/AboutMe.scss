@@ -1,14 +1,14 @@
+@use "sass:math";
 @import '../../styles/variables';
 
 
 .about {
   max-width: 1280px;
   width: 80%;
-  margin: 20vh auto;
+  margin: $base-spacing auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1rem;
 }
 
 .about__title {
@@ -16,7 +16,7 @@
   font-size: 2em;
   letter-spacing: 0.08em;
   color: $primary;
-  margin-bottom: 50px;
+  margin-bottom: $base-spacing / 2;
   text-align: center;
 }
 
@@ -26,17 +26,18 @@
   font-size: 1em;
   line-height: 23px;
   max-width: 500px;
+  text-align: center;
 }
 
-.about__spaceX {
-  width: 80%;
-  max-width: 350px;
-  display: flex;
-  //justify-content: center;
-  align-items: center;
+.about__icon-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin-top: $base-spacing;
+  display: grid;
+  place-items: center;
 }
 
-.about__rocket {
+.about__icon {
   width: 100%;
 }
 
@@ -44,13 +45,20 @@
   .about {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 120px;
+    margin-top: $base-spacing;
   }
 
   .about__title {
     text-align: left;
   }
+  .about__txt {
+    text-align: left;
+  }
+
+  .about__icon-wrapper {
+    margin-top: 0;
+  }
+
 }
 
 @media screen and (min-width: 900px) {
