@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .container {
-  padding: 5em 3em;
+  padding: $base-spacing 3em;
   background-color: $primary;
   color: white;
 }

@@ -4,7 +4,7 @@
 .projects {
   background-color: $dark;
   color: $white;
-  padding: 50px 0;
+  padding: $base-spacing 0;
   margin-top: 20vh;
 }
 
@@ -18,7 +18,7 @@
   font-weight: bold;
   font-size: 2em;
   letter-spacing: 0.08em;
-  margin: 50px 0;
+  margin-bottom: $base-spacing / 2;
   text-align: center;
 }
 
@@ -26,7 +26,6 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
   grid-gap: 30px;
   place-items: center;
 }
@@ -76,7 +75,6 @@
   }
 }
 
-
 .project__img {
   width: 100%;
   height: 100%;
@@ -92,9 +90,7 @@
   .projects__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     grid-gap: 30px;
-    //grid-gap-left: 0;
     place-items: start;
     padding: 0;
   }
