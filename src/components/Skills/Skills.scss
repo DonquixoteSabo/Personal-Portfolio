@@ -43,16 +43,6 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
-
-  &:hover {
-    transition: transform ease-in-out 0.5s;
-    transform: translateX(-10px);
-  }
-
-  &:hover .skills__inner-list {
-    transition: opacity ease-in-out 0.9s 0.1s;;
-    opacity: 1;
-  }
 }
 
 .small-device {
@@ -74,7 +64,7 @@
 @media screen and (min-width: 800px) {
   .skills__item {
     width: 20%;
-    margin-top: 3em;
+    margin-top: math.div($base-spacing, 2);
   }
 }
 
