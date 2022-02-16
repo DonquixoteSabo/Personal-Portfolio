@@ -1,12 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // icons
 import Icon from './Icon';
 //styles
 import './AboutMe.scss';
-
-gsap.registerPlugin(ScrollTrigger);
 
 //TODO Add link into footer
 //<a href="https://www.streamlinehq.com">CHECK WHERE IT IS</a>
@@ -58,7 +55,7 @@ const AboutMe = () => {
     imgTl.current = gsap.timeline({
       scrollTrigger: {
         trigger: title.current,
-        start: 'top center'
+        start: 'top bottom'
       }
     });
     // Animation
