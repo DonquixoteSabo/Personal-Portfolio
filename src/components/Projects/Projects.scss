@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import '../../styles/variables';
 
 
@@ -18,7 +19,7 @@
   font-weight: bold;
   font-size: 2em;
   letter-spacing: 0.08em;
-  margin-bottom: $base-spacing / 2;
+  margin-bottom: math.div($base-spacing, 2);
   text-align: center;
 }
 
