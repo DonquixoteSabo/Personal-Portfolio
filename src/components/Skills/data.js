@@ -1,15 +1,16 @@
 import React from 'react';
 //images
 import html from '../../images/skills/html.svg';
-import css from '../../images/skills/css.png';
-import javascript from '../../images/skills/javascript-seeklogo.svg';
-import react from '../../images/skills/react.svg';
-import typescript from '../../images/skills/typescriptlang-icon.svg';
+import css from '../../images/skills/css.svg';
+import javascript from '../../images/skills/javascript.svg';
+import react from '../../images/skills/react-2.svg';
+import typescript from '../../images/skills/typescript.svg';
 import testing from '../../images/skills/react-testing.png';
 import graphql from '../../images/skills/graphql.svg';
-import england from '../../images/skills/england.svg';
+import england from '../../images/skills/british.png';
 
-
+//TODO
+// https://icons8.com/icons/set/england pass this link somewhere
 export const skillsData = [
   {
     icon: html,

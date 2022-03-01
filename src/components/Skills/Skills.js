@@ -5,7 +5,6 @@ import { skillsData } from './data';
 //css
 import './Skills.scss';
 
-
 const playAnimation = (index) => {
   const tl = gsap.timeline();
   tl.to(`.skills__item--${index}`, { x: '-10px' })
