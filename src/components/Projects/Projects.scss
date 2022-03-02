@@ -76,15 +76,40 @@
   }
 }
 
+.project__glass {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
 .project__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
 
-  &-wrapper {
-    width: 100%;
+.project__img-wrapper {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    transition: opacity 0.2s;
+    img {
+      opacity: 0.2;
+    }
+
+    .project__glass {
+      transition: opacity 0.2s;
+      opacity: 1;
+    }
   }
 }
+
 
 @media screen and (min-width: 700px) {
 
