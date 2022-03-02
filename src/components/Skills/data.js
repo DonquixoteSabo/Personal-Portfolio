@@ -7,10 +7,10 @@ import react from '../../images/skills/react-2.svg';
 import typescript from '../../images/skills/typescript.svg';
 import testing from '../../images/skills/react-testing.png';
 import graphql from '../../images/skills/graphql.svg';
-import england from '../../images/skills/british.png';
+import england from '../../images/skills/england.svg';
 
 //TODO
-// https://icons8.com/icons/set/england pass this link somewhere
+// https://icons8.com/icons/ pass this link somewhere
 export const skillsData = [
   {
     icon: html,
