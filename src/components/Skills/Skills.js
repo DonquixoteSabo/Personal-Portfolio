@@ -29,7 +29,7 @@ const Skills = () => {
     tl.current = gsap.timeline({
       scrollTrigger: {
         trigger: title.current,
-        start: 'top bottom'
+        start: 'top center'
       }
     });
     // Animation

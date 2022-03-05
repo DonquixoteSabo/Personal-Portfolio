@@ -1,9 +1,8 @@
 import React, {useEffect, useRef} from 'react';
 import gsap from 'gsap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import {faSearch} from '@fortawesome/free-solid-svg-icons';
-
+// components
+import Project from './Project/Project';
+//styles
 import './Projects.scss';
 //TODO
 // USE some kind of graphcms/datocms to fetch the data;
@@ -63,8 +62,7 @@ const projectsData = [
     live: 'https://donquixotesabo.github.io/Weather-App/',
   }
 ];
-//TODO
-// CREATE PROJECT component and render it here. Projects should be responsible only for passing data instead of the whole logic
+
 const Projects = () => {
   const title = useRef(null);
   const tl = useRef(null);
@@ -77,7 +75,7 @@ const Projects = () => {
     tl.current = gsap.timeline({
       scrollTrigger: {
         trigger: title.current,
-        start: 'top top'
+        start: 'top center'
       }
     });
     // Animation
@@ -88,6 +86,7 @@ const Projects = () => {
         .to(list.current.children, { y: 0, autoAlpha: 1, duration: 1 });
 
   }, []);
+
   return (
     <section className='projects'>
       <div className='projects__container'>
@@ -95,23 +94,8 @@ const Projects = () => {
           <h1>Projects</h1>
         </header>
         <ul className='projects__list' ref={list}>
-          {projectsData.map(({ title, img, link, description }) => (
-            <li className='project__item project' key={title}>
-              <div className='project__wrapper'>
-                <h3 className='project__title'>{title}</h3>
-                <p className='project__description'>{description}</p>
-                <a href={link} className='project__link'>
-                  <FontAwesomeIcon className='project__link-icon' icon={faGithub} />
-                  Code
-                </a>
-              </div>
-              {/*SOMETHING IS WRONG HERE XDDD. This should be live but i dont why why i still get error "live is not defined"*/}
-              <a href={link} target='_blank' className='project__img-wrapper project__img-wrapper--active'>
-                <img src={img} alt={title} className='project__img' />
-                <FontAwesomeIcon className='project__glass' icon={faSearch} />
-              </a>
-            </li>
-          ))}
+          {projectsData.map((project) => <Project key={project.title} {...project} />
+          )}
         </ul>
       </div>
     </section>

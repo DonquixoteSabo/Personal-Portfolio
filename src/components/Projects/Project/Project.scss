@@ -1,0 +1,101 @@
+@use 'sass:math';
+@import '../../../styles/variables';
+
+.project {
+  display: flex;
+  background-color: $primary;
+  flex-direction: column-reverse;
+  max-width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.05);
+
+  &__wrapper {
+    width: 90%;
+    padding: 1em 0 1em 1.5em;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+
+  &__description {
+    font-size: 0.8em;
+    margin-right: 10px;
+    padding: 0.5em 0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 0;
+    font-weight: 600;
+    transition: .3s;
+
+    &:hover {
+      opacity: 50%;
+    }
+
+    &-icon {
+      margin-right: 2%;
+      font-size: 30px;
+    }
+  }
+}
+
+.project__glass {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.project__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project__img-wrapper {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    transition: opacity 0.2s;
+    img {
+      opacity: 0.2;
+    }
+
+    .project__glass {
+      transition: opacity 0.2s;
+      opacity: 1;
+    }
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .project {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .project {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project {
+    max-width: 700px;
+    flex-direction: row;
+  }
+}
