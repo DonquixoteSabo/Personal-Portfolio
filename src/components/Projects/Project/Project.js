@@ -9,8 +9,9 @@ import './Project.scss';
 function createMarkup(description) {
     return {__html: description};
 }
-//TODO
+// TODO
 // after you get images from your graphic designer refactor these styles because they don't look that good with these images.
+
 const Project = ({title, description, link, image, live, id}) => {
     return (
         <li className='project' key={id}>

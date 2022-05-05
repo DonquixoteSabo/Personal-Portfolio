@@ -54,6 +54,7 @@
   }
 }
 
+
 .hero__socials {
   color: white;
   display: flex;
@@ -61,12 +62,28 @@
   justify-content: space-between;
   align-items: flex-start;
   font-size: 16px;
+  cursor: pointer;
+
+   a {
+      text-decoration: none;
+      color: inherit;
+    }
 
   .facebook, .github, .email {
     width: 3em;
     height: 3em;
     margin: 1em 0;
   }
+
+   .facebook:hover {
+    opacity: 0.8;
+  }
+   .github:hover {
+      opacity: 0.8;
+    }
+     .email:hover {
+        opacity: 0.8;
+      }
 
 }
 

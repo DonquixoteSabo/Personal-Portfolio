@@ -16,9 +16,15 @@ const Hero = () => {
           <span>Front-end developer</span>
         </div>
         <div className='hero__socials'>
-          <FontAwesomeIcon icon={faGithubSquare} className='github' />
-          <FontAwesomeIcon icon={faFacebookSquare} className='facebook' />
-          <FontAwesomeIcon icon={faEnvelope} className='email' />
+          <a href='https://github.com/Kamil-Budzik'>
+            <FontAwesomeIcon icon={faGithubSquare} className='github' />
+          </a>
+          <a href='https://www.facebook.com/profile.php?id=100071523011124'>
+            <FontAwesomeIcon icon={faFacebookSquare} className='facebook' />
+          </a>
+          <a href='mailto:kamil.budzik03@gmail.com'>
+            <FontAwesomeIcon icon={faEnvelope} className='email' />
+          </a>
         </div>
       </div>
     </section>

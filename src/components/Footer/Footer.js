@@ -15,16 +15,23 @@ const Footer = () => {
             Let's connect
           </header>
           <div className='footer__row'>
-            <a className='footer__link' href='https://devchallenges.io/portfolio/DonquixoteSabo'>
+            <a className='footer__link' href='https://devchallenges.io/portfolio/Kamil-Budzik'>
               <DevChallengesIcon />
             </a>
+            <a href='https://www.freepik.com/psd/laptop-screen' className='footer__link'>Device mockup author</a>
           </div>
         </div>
         <div className='footer__socials'>
           <div className='footer__socials-container'>
-            <FontAwesomeIcon icon={faGithubSquare} className='icon' />
-            <FontAwesomeIcon icon={faFacebookSquare} className='icon' />
-            <FontAwesomeIcon icon={faEnvelope} className='icon' />
+            <a href='https://github.com/Kamil-Budzik'>
+              <FontAwesomeIcon icon={faGithubSquare} className='icon' />
+            </a>
+            <a href='https://www.facebook.com/profile.php?id=100071523011124'>
+              <FontAwesomeIcon icon={faFacebookSquare} className='icon' />
+            </a>
+            <a href='mailto:kamil.budzik03@gmail.com'>
+              <FontAwesomeIcon icon={faEnvelope} className='icon' />
+            </a>
           </div>
         </div>
       </footer>

@@ -26,6 +26,11 @@
 
 .footer__socials {
   display: none;
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
 }
 
 .footer__socials-container {
@@ -49,7 +54,7 @@
   text-decoration: none;
   cursor: pointer;
   transition: .3s;
-
+  margin-right: .5em;
   &:hover {
     opacity: 50%;
   }
