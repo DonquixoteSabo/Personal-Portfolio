@@ -15,7 +15,6 @@ gsap.registerPlugin(ScrollTrigger);
 const IndexPage = () => {
   return (
     <Layout>
-      <Navigation />
       <Hero />
       <AboutMe />
       <Skills />
