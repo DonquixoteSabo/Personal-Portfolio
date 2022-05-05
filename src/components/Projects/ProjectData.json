@@ -1,44 +1,4 @@
 [
-  {
-    "id": "114784133",
-    "title": "Github Jobs",
-    "description": "In the beginning, this site was using GitHub API. Unluckily, this API is no longer available so I was forced to use some kind of service worker to mock the data. That's why this project doesn't work in production. To check this project and run all tests you have to copy this repo. For this project, I used typescript, Mock Service Worker, RTK Query, and so on.",
-    "image": {
-      "url": "https://www.datocms-assets.com/64388/1646804597-jobs.png"
-    },
-    "link": "https://github.com/DonquixoteSabo/Github-Jobs",
-    "live": "https://donquixotesabo.github.io/Github-Jobs/"
-  },
-  {
-    "id": "114784307",
-    "title": "Edie homepage",
-    "description": "The project was built a long time ago at the beginning of my front-end passion. When I was making this project I didn't know how to use any kind of compiler so that's why I have few CSS files. All in all, I created this fully responsible project only using flexbox and media queries so that's why I think it's worth showing it.",
-    "image": {
-      "url": "https://www.datocms-assets.com/64388/1651746643-mockup_1-jpegh.jpg"
-    },
-    "link": "https://github.com/Kamil-Budzik/Edie-homepage",
-    "live": "https://kamil-budzik.github.io/Edie-homepage/"
-  },
-  {
-    "id": "114047385",
-    "title": "Fylo Landing Page",
-    "description": "This project is a challenge from Frontend Mentor. It's a fully responsive project thanks to the flexbox and grid. Because of SVG icons, I had a lot of work with advanced responsible styles. Built with next and styled-components.",
-    "image": {
-      "url": "https://www.datocms-assets.com/64388/1651746747-fylo_mockup_jpg.jpg"
-    },
-    "link": "https://github.com/Kamil-Budzik/fylo-dark-theme",
-    "live": "fylo-dark-theme-tawny.vercel.app"
-  },
-  {
-    "id": "114784196",
-    "title": "Weather API",
-    "description": "This project was built with quite an advanced meta-weather API. My folder structure was based on atomic design. To handle state I used redux with redux-thunk. At this moment I would use redux-toolkit or react-query but I want to show you that I can also work with older technologies.",
-    "image": {
-      "url": "https://www.datocms-assets.com/64388/1651746777-weather_app_mockup_jpg.jpg"
-    },
-    "link": "https://github.com/Kamil-Budzik/Weather-App",
-    "live": "https://kamil-budzik.github.io/Weather-App/"
-  },
   { 
     "id": "113965123",
     "title": "Rick and Morty",
@@ -58,5 +18,45 @@
     },
     "link": "https://github.com/Kamil-Budzik/adv-study-buddy",
     "live": "https://github.com/Kamil-Budzik/adv-study-buddy"
-  }
+  },
+  {
+    "id": "114047385",
+    "title": "Fylo Landing Page",
+    "description": "This project is a challenge from Frontend Mentor. It's a fully responsive project thanks to the flexbox and grid. Because of SVG icons, I had a lot of work with advanced responsible styles. Built with next and styled-components.",
+    "image": {
+      "url": "https://www.datocms-assets.com/64388/1651746747-fylo_mockup_jpg.jpg"
+    },
+    "link": "https://github.com/Kamil-Budzik/fylo-dark-theme",
+    "live": "fylo-dark-theme-tawny.vercel.app"
+  },
+  {
+    "id": "114784307",
+    "title": "Edie homepage",
+    "description": "The project was built a long time ago at the beginning of my front-end passion. When I was making this project I didn't know how to use any kind of compiler so that's why I have few CSS files. All in all, I created this fully responsible project only using flexbox and media queries so that's why I think it's worth showing it.",
+    "image": {
+      "url": "https://www.datocms-assets.com/64388/1651746643-mockup_1-jpegh.jpg"
+    },
+    "link": "https://github.com/Kamil-Budzik/Edie-homepage",
+    "live": "https://kamil-budzik.github.io/Edie-homepage/"
+  },
+  {
+    "id": "114784196",
+    "title": "Weather API",
+    "description": "This project was built with quite an advanced meta-weather API. My folder structure was based on atomic design. To handle state I used redux with redux-thunk. At this moment I would use redux-toolkit or react-query but I want to show you that I can also work with older technologies.",
+    "image": {
+      "url": "https://www.datocms-assets.com/64388/1651746777-weather_app_mockup_jpg.jpg"
+    },
+    "link": "https://github.com/Kamil-Budzik/Weather-App",
+    "live": "https://kamil-budzik.github.io/Weather-App/"
+  },
+    {
+    "id": "114784133",
+    "title": "Github Jobs",
+    "description": "In the beginning, this site was using GitHub API. Unluckily, this API is no longer available so I was forced to use some kind of service worker to mock the data. That's why this project doesn't work in production. To check this project and run all tests you have to copy this repo. For this project, I used typescript, Mock Service Worker, RTK Query, and so on.",
+    "image": {
+      "url": "https://www.datocms-assets.com/64388/1646804597-jobs.png"
+    },
+    "link": "https://github.com/DonquixoteSabo/Github-Jobs",
+    "live": "https://donquixotesabo.github.io/Github-Jobs/"
+  },
 ]
