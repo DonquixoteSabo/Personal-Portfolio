@@ -56,8 +56,8 @@ export const skillsData = [
   },
   {
     icon: england,
-    name: <>English <br />B2+/C1</>,
-    text: ['B2+/C1'],
+    name: <>English <br />B2/B2+</>,
+    text: ['B2/B2+'],
     smallDevice: true
   }
 ];
