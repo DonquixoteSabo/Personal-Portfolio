@@ -15,21 +15,22 @@ const Footer = () => {
             Let's connect
           </header>
           <div className='footer__row'>
-            <a className='footer__link' href='https://devchallenges.io/portfolio/Kamil-Budzik'>
+            <a  href='https://devchallenges.io/portfolio/Kamil-Budzik' className='footer__link' target="_blank" rel="noreferrer">
               <DevChallengesIcon />
             </a>
-            <a href='https://www.freepik.com/psd/laptop-screen' className='footer__link'>Device mockup author</a>
+            <a href='https://www.freepik.com/psd/laptop-screen' className='footer__link' target="_blank" rel="noreferrer">Device mockup author</a>
+            <a href="https://www.streamlinehq.com" className='footer__link' target="_blank" rel="noreferrer">About me icon author</a>
           </div>
         </div>
         <div className='footer__socials'>
           <div className='footer__socials-container'>
-            <a href='https://github.com/Kamil-Budzik'>
+            <a href='https://github.com/Kamil-Budzik' target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faGithubSquare} className='icon' />
             </a>
-            <a href='https://www.facebook.com/profile.php?id=100071523011124'>
+            <a href='https://www.facebook.com/profile.php?id=100071523011124' target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faFacebookSquare} className='icon' />
             </a>
-            <a href='mailto:kamil.budzik03@gmail.com'>
+            <a href='mailto:kamil.budzik03@gmail.com' target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faEnvelope} className='icon' />
             </a>
           </div>

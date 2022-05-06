@@ -8,7 +8,7 @@ import './Hero.scss';
 const Hero = () => {
   return (
     <section className='hero'>
-      <div className='hero__background'></div>
+      <div className='hero__background' />
       <div className='hero__display-text'>
         <div className='hero__text-container'>
           <span>Hi, I am</span>
@@ -16,13 +16,13 @@ const Hero = () => {
           <span>Front-end developer</span>
         </div>
         <div className='hero__socials'>
-          <a href='https://github.com/Kamil-Budzik'>
+          <a href='https://github.com/Kamil-Budzik' target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithubSquare} className='github' />
           </a>
-          <a href='https://www.facebook.com/profile.php?id=100071523011124'>
+          <a href='https://www.facebook.com/profile.php?id=100071523011124' target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faFacebookSquare} className='facebook' />
           </a>
-          <a href='mailto:kamil.budzik03@gmail.com'>
+          <a href='mailto:kamil.budzik03@gmail.com' target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faEnvelope} className='email' />
           </a>
         </div>
