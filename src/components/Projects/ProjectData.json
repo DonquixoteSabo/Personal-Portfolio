@@ -41,15 +41,14 @@
   },
   {
     "id": "114784307",
-    "title": "Edie homepage",
-    "description": "The project was built a long time ago at the beginning of my front-end passion. When I was making this project I didn't know how to use any kind of compiler so that's why I have few CSS files. All in all, I created this fully responsible project only using flexbox and media queries so that's why I think it's worth showing it.",
+    "title": "Bookmark",
+    "description": "Fully responsive landing page built with tailwind and Next.js",
     "image": {
-      "url": "https://www.datocms-assets.com/64388/1651827280-mockup_1-jpegh.jpg"
+      "url": "https://www.datocms-assets.com/64388/1653931699-nmfs59ofpjizo6knhpsr.jpg"
     },
-    "link": "https://github.com/Kamil-Budzik/Edie-homepage",
-    "live": "https://kamil-budzik.github.io/Edie-homepage/"
+    "link": "https://github.com/Kamil-Budzik/Bookmark-landing-page",
+    "live": "https://bookmark-landing-page-beige.vercel.app/"
   },
-
   {
     "id": "114784133",
     "title": "Github Jobs",
