@@ -26,6 +26,9 @@ const Hero = () => {
             <FontAwesomeIcon icon={faEnvelope} className='email' />
           </a>
         </div>
+        <button className='hero__button'>
+          <a href='https://docdro.id/kwclySQ' download>Dowload my CV</a>
+        </button>
       </div>
     </section>
   );

@@ -55,6 +55,36 @@
 }
 
 
+.hero__button {
+    padding: 1em 3em;
+    background: $primary;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    font: inherit;
+    display: none;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 2em;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    @media (min-width: 980px) {
+    display: block;
+    }
+
+    &:hover {
+    background: darken($primary, 15%);
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+}
+
 .hero__socials {
   color: white;
   display: flex;
